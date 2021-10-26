@@ -3,17 +3,11 @@
   <h1>Create New Event</h1>
   <p>Event Type:</p>
   <p>Event Name:</p>
-  <Dropdown
-    :options="[{ id: 1, name: 'Option 1'}, { id: 2, name: 'Option 2'}]"
-    :disabled="false"
-    name="zipcode"
-    :maxItem="10"
-    placeholder="Please select an option">
-  </Dropdown>
+  <v-btn elevation="2">Button</v-btn>
 </template>
 
 <script>
-import Dropdown from 'vue-simple-search-dropdown';
+// import Dropdown from 'vue-simple-search-dropdown';
 export default {
   name: 'CreateEvent',
   beforeCreate () {
@@ -23,7 +17,7 @@ export default {
     document.querySelector('body').setAttribute('style', '')
   },
   components: {
-      Dropdown
+      // Dropdown
   }
 }
 // document.body.style.backgroundColor = 'FFF0C8';
